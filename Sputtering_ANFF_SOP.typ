@@ -64,3 +64,4 @@
 + Close the divider between the two chambers
 + Switch off the vacuum pump
 + Wait until the gauge reads 760 Torr
++ gjhg
