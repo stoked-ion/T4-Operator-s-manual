@@ -39,9 +39,9 @@
 //== Start up and Loading the Jig
 
 Before starting, ensure that: 
- - the gauges are properly loaded in the jig.
  - the power of GUN\#4 is supplying power to GUN\#3 (where the nickel is loaded).
-  - _Note: This SOP is updated considering this setup._
+  - _Note: This SOP considers this setup_.
+  - _Last update: 18 JUL 2025._
 
 == Loading
 + Switch off the loading bay vacuum pump.
@@ -60,7 +60,7 @@ Before starting, ensure that:
 + Carefully push the loading arm to insert the jig into the sample holder.
  - Ensure the top plate of the jig slides into the holder and seats properly in its lugs.
  - If needed, refine the orientation and height of the jig using the joystick.
- #image("engage_lugs.png")
+ #figure(image("engage_lugs.png", width: 6.5cm))
 + Use the joystick to slowly raise the plate until it is caught by sample holder.
  - If the plate begins to tilt while raising, it indicates that only one of the lugs is engaged. In this case, lower the plate back into the loading arm and repeat the previous step.
 + Once the plate is caught, slowly rotate the sample holder to ensure that the jig's top plate is properly seated on both lugs.
@@ -70,32 +70,54 @@ Before starting, ensure that:
 == Sputtering
 + Adjust the sputterer height to *40 mm* using the joystick.
  -  Red line aligned with the bottom.
- #figure(image("height.png", width: 4cm))
+ #figure(image("height.png", width: 3.9cm))
 + Switch the holder controller to remote mode.
 + Set the rotation to *20 rpm* with the knob.
-+ Refer the software GUI below for the following steps:
++ Refer the GUI field labels below for the following steps:
  #figure(image("gui.png"))
 
-+ Turn the *rotation on (A)*.
++ Turn the *rotation on* (field A).
  - Check if the sample is rotating.
-+ Set the Argon flow rate to *60 STPT (C)* and *turn it on (B)*.
-+ Click in pressure and *set 30 mTorr (D)*.
-+ The sputterer power is 150 W, but it needs to raise slowly:
- - Set 30 W (F) and turn it on (H).
- - _Check if the power is on. A pink light should be visible from the front window._
- - Set *120 s (G)* and then set *150 W (F)*.
-  - _The ramp time should be set first!!_
-+ Wait for the power indicator reads 150W.
-+ Set the pressure to *3 mTorr (D)*.
++ Set the Argon flow rate to *60 STPT* and *turn it on* (field B).
++ Click in "PRESSURE" and *set 30 mTorr* (field D).
++ The sputterer power is 150 W, but it needs to raise slowly. In the field E:
+ - Set 30 W and turn it on.
+  - _Check if the power is on. A light should be visible (front window)._
+ - Set *120 s* and then set *150 W*.
+  - _The ramp time should be set first!_
++ Wait until the power reaches 150 W.
++ Set the pressure to *3 mTorr* (field C).
 + Close both windows to protect them from nickel particles.
-+ Prepare the timer, the sputtering time is manual.
++ Prepare the timer.
+ - The sputtering time is manual.
  - Sputtering time: *10 min 30 sec*.
   - _Longer time, thicker nickel strip._
-+ *Open the nickel shutter (E) and start the timer, simultaneously*.
-+ 
-+ *Close the shutter (E) when the time is up.*
++ *Open the nickel shutter* (click the "OPEN" button in field D) and *start the timer simultaneously*.
++ Wait for the sputtering time.
  - _Pay attention, correct time is crucial._
++ *Close the shutter* when the time is up (field D).
 + Lower the power slowly:
- - Set *100 s (G)* and then set *50 W (F)*.
-+ Wait for the power indicator reads 50W.
-+ Turn off the power of GUN\#4.
+ - Set *100 s* and then set *50 W* (field E).
++ Wait until the power reaches 50 W.
++ Turn off the power (field E).
++ Open the pressure control (field C).
++ Turn off the gas (field B).
++ Turn off the rotation (field A).
++ Open the windows to start the unloading procedure.
+
+== Unloading
++ Open the interlock gate.
++ Adjust the internal sample holder to receive the loading arm:
+ - Set the switch to local.
+ - Use the joystick to manually rotate and adjust the height.
++ Slowly bring the loading arm into the chamber.
+ - The holder should slide below the jig.
++ Carefully lower the jig with the joystick.
+ - Rotate it for fine adjustment if needed.
++ Further lower the sample holder until the jig is properly seated in the holder and disengaged from the lugs.
+ - If the jig doesn't disengage, or if it seems to be tilting, small movements may be necessary (height or rotation).
++ Once the jig is fully supported by the holder, retract the loading arm.
++ Close the interlock gate.
++ Switch off the loading bay vacuum pump.
++ Remove the jig.
++ Close the loading bay and switch on the vacuum pump.
